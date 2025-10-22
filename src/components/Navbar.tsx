@@ -18,7 +18,6 @@ const Navbar = () => {
     { name: 'Home', href: '#home' },
     { name: 'About Us', href: '#about' },
     { name: 'Documents', href: '#documents' },
-    { name: 'Videos', href: '#videos' },
     { name: 'Articles', href: '#articles' },
     { name: 'Contact', href: '#contact' },
   ];
@@ -34,7 +33,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-card' : 'bg-transparent'
+        isScrolled ? 'bg-white shadow-card' : 'bg-white'
       }`}
     >
       <div className="container mx-auto px-4">
@@ -46,9 +45,9 @@ const Navbar = () => {
               e.preventDefault();
               scrollToSection('#home');
             }}
-            className="text-xl md:text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
+            className="inline-flex items-center"
           >
-            YourBrand
+            <img src="/logo.png" alt="Brand logo" className="h-10 md:h-12 w-auto" />
           </a>
 
           {/* Desktop Navigation */}

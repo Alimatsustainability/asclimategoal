@@ -1,51 +1,35 @@
-import { Card } from '@/components/ui/card';
-import { CheckCircle } from 'lucide-react';
-import aboutImage from '@/assets/about-image.jpg';
+import aboutImage from '@/assets/image-of -the-founder.jpg';
+
 
 const About = () => {
-  const features = [
-    'Industry-leading expertise',
-    'Comprehensive resources',
-    'Dedicated support team',
-    'Proven track record'
-  ];
-
   return (
-    <section id="about" className="py-20 md:py-32 bg-muted/30">
+    <section id="about" className="relative overflow-hidden py-20 md:py-32 bg-muted/30">
+      <div className="absolute inset-0 -z-10">
+        <div className="absolute left-1/2 top-24 h-64 w-64 -translate-x-1/2 rounded-full bg-primary/10 blur-3xl" />
+        <div className="absolute right-8 bottom-16 h-48 w-48 rounded-full bg-accent/10 blur-3xl" />
+      </div>
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Image Side */}
           <div className="order-2 md:order-1">
-            <Card className="overflow-hidden shadow-card hover:shadow-hover transition-smooth">
+            <div className="relative h-[320px] md:h-[380px] lg:h-[440px] w-full rounded-3xl border border-border bg-white/80 shadow-2xl shadow-primary/20 flex items-center justify-center overflow-hidden p-4 md:p-6">
+              <div className="absolute inset-3 rounded-3xl bg-gradient-to-br from-primary/5 via-transparent to-accent/10" />
               <img
                 src={aboutImage}
                 alt="About Us"
-                className="w-full h-full object-cover"
+                className="relative h-full w-full object-contain"
               />
-            </Card>
+            </div>
           </div>
 
           {/* Content Side */}
           <div className="order-1 md:order-2">
-            <h2 className="text-3xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              About Us
-            </h2>
-            <p className="text-lg text-muted-foreground mb-6 leading-relaxed">
-              We are a leading organization dedicated to providing exceptional resources and services to our clients. With years of experience in the industry, we've built a reputation for excellence and innovation.
-            </p>
-            <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-              Our mission is to empower individuals and businesses with the knowledge and tools they need to thrive in today's fast-paced digital landscape.
-            </p>
-
-            {/* Feature List */}
-            <div className="space-y-4">
-              {features.map((feature, index) => (
-                <div key={index} className="flex items-center gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary flex-shrink-0" />
-                  <span className="text-foreground font-medium">{feature}</span>
-                </div>
-              ))}
+            <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-2 text-sm font-medium uppercase tracking-widest text-primary">
+              Founder Story
             </div>
+            <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
+              <b>Mrs Alimat Oladipupo Jinadu S.</b> is the founder of Alimat Sustainability Climate Goals and a passionate advocate for climate education and youth empowerment. She studied Economics and Management at the University of Westminster in London, participated in Erasmus+ projects in Greece, Amsterdam, and Italy, and holds a Carbon Literacy certification from Pagoda Projects.
+            </p> 
           </div>
         </div>
       </div>

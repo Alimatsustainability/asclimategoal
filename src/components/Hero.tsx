@@ -1,6 +1,6 @@
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
-import heroImage from '@/assets/hero-bg.jpg';
+import heroImage from '@/assets/hero2.jpg';
 
 const Hero = () => {
   return (
@@ -17,20 +17,17 @@ const Hero = () => {
       <div className="relative z-10 container mx-auto px-4 text-center">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 animate-fade-in">
-            Welcome to Your
-            <span className="block mt-2 bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
-              Digital Excellence
-            </span>
+            Welcome to Alimat Sustainability Climate Goal
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto animate-fade-in">
-            Discover our comprehensive collection of resources, videos, and insights designed to help you succeed in the digital age.
+            Alimat Sustainability Climate Goal Agenda is “Empowering communities to discover the truth about climate change through reading, writing, and action.”
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Button
               size="lg"
               className="bg-white text-primary hover:bg-white/90 shadow-hover transition-smooth"
               onClick={() => {
-                const element = document.querySelector('#about');
+                const element = document.querySelector('#intro');
                 if (element) element.scrollIntoView({ behavior: 'smooth' });
               }}
             >
