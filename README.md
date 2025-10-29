@@ -1,4 +1,4 @@
-# Pixel Scroll Page
+# AS CLIMATE GOAL
 
 A responsive storytelling site that highlights the Alimat Sustainability Climate Goals initiative with rich imagery, curated resources, and smooth in-page navigation.@src/pages/Index.tsx#11-23 @src/components/Hero.tsx#7-59
 
